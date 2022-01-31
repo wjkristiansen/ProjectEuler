@@ -1,0 +1,4 @@
+namespace prob1
+{
+    
+}
