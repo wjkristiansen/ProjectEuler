@@ -1,6 +1,6 @@
-#include "Problem3.h"
+#include "Problem4.h"
 
 void main()
 {
-    CProblem3::Execute();
+    CProblem4::Execute();
 }
