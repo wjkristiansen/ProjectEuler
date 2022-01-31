@@ -1,6 +1,6 @@
 add_executable(pe
     main.cpp
-    prob1.cpp)
+    Problem1.cpp)
 
 if(MSVC)
     target_compile_options(pe PRIVATE /W4 /WX)

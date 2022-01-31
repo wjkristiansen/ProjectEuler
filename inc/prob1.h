@@ -1,4 +1,0 @@
-namespace prob1
-{
-    
-}
