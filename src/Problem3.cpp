@@ -148,5 +148,5 @@ static size_t LargestPrimeFactor(size_t Number)
 
 void CProblem3::Execute()
 {
-	std::cout << "Solution: " << LargestPrimeFactor(600851475143) << std::endl;
+	std::cout << "Problem 3 Solution: " << LargestPrimeFactor(600851475143) << std::endl;
 }

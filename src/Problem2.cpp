@@ -32,5 +32,5 @@ size_t CProblem2::SumEvenFib(int limit)
 
 void CProblem2::Execute()
 {
-    std::cout << "Solution: " << SumEvenFib(4000000) << std::endl;
+    std::cout << "Problem 2 Solution: " << SumEvenFib(4000000) << std::endl;
 }

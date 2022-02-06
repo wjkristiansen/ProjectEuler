@@ -4,7 +4,8 @@ add_executable(pe
     Problem2.cpp
     Problem3.cpp
     Problem4.cpp
-    Problem5.cpp)
+    Problem5.cpp
+    Problem6.cpp)
 
 if(MSVC)
     target_compile_options(pe PRIVATE /W4 /WX)
@@ -12,3 +13,6 @@ else()
     target_compile_options(pe PRIVATE -Wall -Wextra -Werror)
 endif()
 
+target_link_libraries(pe
+    InCommandLib
+)

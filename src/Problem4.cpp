@@ -50,5 +50,5 @@ int LargestPalendrome()
 void CProblem4::Execute()
 {
 	int solution = LargestPalendrome();
-	std::cout << "Solution: " << solution << std::endl;
+	std::cout << "Problem 4 Solution: " << solution << std::endl;
 }

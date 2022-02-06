@@ -36,5 +36,5 @@ void CProblem5::Execute()
 {
     int solution = RangeLeastCommonMultiple(2, 20);
 
-    std::cout << "Solution: " << solution << std::endl;
+    std::cout << "Problem 5 Solution: " << solution << std::endl;
 }

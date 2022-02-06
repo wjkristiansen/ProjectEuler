@@ -24,5 +24,5 @@ void CProblem1::Execute()
             sum += i;
     }
 
-    std::cout << "Solution: " << sum << std::endl;
+    std::cout << "Problem 1 Solution: " << sum << std::endl;
 }
