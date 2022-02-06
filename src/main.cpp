@@ -7,12 +7,13 @@
 #include "Problem4.h"
 #include "Problem5.h"
 #include "Problem6.h"
+#include "Problem7.h"
 
 void main(int argc, const char *argv[])
 {
-    InCommand::CCommandScope CommandParser;
-    auto &ProblemParam = CommandParser.DeclareVariableParameter("problem", "0");
-    CommandParser.ParseParameterArguments(1, argc, argv);
+    InCommand::CCommandScope CommandLine("pe");
+    auto &ProblemParam = CommandLine.DeclareVariableOption("problem", "0");
+    CommandLine.ParseOptions(argc, argv, 1);
 
     int problem = std::stoi(ProblemParam.GetValueAsString());
 
@@ -34,8 +35,11 @@ void main(int argc, const char *argv[])
         CProblem5::Execute();
         break;
     case 6:
-    default:
         CProblem6::Execute();
+        break;
+    case 7:
+    default:
+        CProblem7::Execute();
         break;
     }
 }
