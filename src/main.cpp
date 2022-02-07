@@ -1,13 +1,7 @@
 #include <memory>
 #include <InCommand.h>
 
-#include "Problem1.h"
-#include "Problem2.h"
-#include "Problem3.h"
-#include "Problem4.h"
-#include "Problem5.h"
-#include "Problem6.h"
-#include "Problem7.h"
+#include "Problems.h"
 
 void main(int argc, const char *argv[])
 {
@@ -38,8 +32,11 @@ void main(int argc, const char *argv[])
         CProblem6::Execute();
         break;
     case 7:
-    default:
         CProblem7::Execute();
+        break;
+    case 8:
+    default:
+        CProblem8::Execute();
         break;
     }
 }
