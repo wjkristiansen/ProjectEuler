@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Problem11.h"
+#include "Problems.h"
 
 // In the 20×20 grid below, four numbers along a diagonal line have been marked by [].
 //
@@ -73,7 +73,7 @@ size_t VerticalProduct(int i, int j)
     return GridNumbers[i][j] * GridNumbers[i][j + 1] * GridNumbers[i][j + 2] * GridNumbers[i][j + 3];
 }
 
-void CProblem11::Execute()
+void CProblem<11>::Execute()
 {
     size_t MaxProduct = 0;
 

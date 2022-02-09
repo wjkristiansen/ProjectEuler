@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Problem9.h"
+#include "Problems.h"
 
 // A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
 //
@@ -21,7 +21,7 @@ void Euclid(size_t m, size_t n, size_t&a, size_t&b, size_t&c)
     c = m * m + n * n;
 }
 
-void CProblem9::Execute()
+void CProblem<9>::Execute()
 {
     size_t m = 1;
     size_t n = 1;

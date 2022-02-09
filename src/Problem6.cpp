@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Problem6.h"
+#include "Problems.h"
 
 //The sum of the squares of the first ten natural numbers is,
 //	1^2 + 2^2 + ... + 10^2 = 385
@@ -10,7 +10,7 @@
 //  3025 - 385 = 2640
 // Find the difference between the sum of the squares of the first one hundred natural numbersand the square of the sum.
 
-void CProblem6::Execute()
+void CProblem<6>::Execute()
 {
 	size_t sum = 0;
 	size_t sum_squares = 0;

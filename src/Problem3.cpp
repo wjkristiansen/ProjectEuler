@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Problem3.h"
+#include "Problems.h"
 #include "PrimeNumbers.h"
 
 // The prime factors of 13195 are 5, 7, 13 and 29.
@@ -20,7 +20,7 @@ static size_t LargestPrimeFactor(size_t Number)
 	return Number;
 }
 
-void CProblem3::Execute()
+void CProblem<3>::Execute()
 {
 	std::cout << "Problem 3 Solution: " << LargestPrimeFactor(600851475143) << std::endl;
 }

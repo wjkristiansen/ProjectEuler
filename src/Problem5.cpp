@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Problem5.h"
+#include "Problems.h"
 
 // 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 // What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20 ?
@@ -32,7 +32,7 @@ static int RangeLeastCommonMultiple(int min, int max)
     return multiple;
 }
 
-void CProblem5::Execute()
+void CProblem<5>::Execute()
 {
     int solution = RangeLeastCommonMultiple(2, 20);
 

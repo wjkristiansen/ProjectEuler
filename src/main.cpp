@@ -14,41 +14,41 @@ void main(int argc, const char *argv[])
     switch (problem)
     {
     case 1:
-        CProblem1::Execute();
+        CProblem<1>::Execute();
         break;
     case 2:
-        CProblem2::Execute();
+        CProblem<2>::Execute();
         break;
     case 3:
-        CProblem3::Execute();
+        CProblem<3>::Execute();
         break;
     case 4:
-        CProblem4::Execute();
+        CProblem<4>::Execute();
         break;
     case 5:
-        CProblem5::Execute();
+        CProblem<5>::Execute();
         break;
     case 6:
-        CProblem6::Execute();
+        CProblem<6>::Execute();
         break;
     case 7:
-        CProblem7::Execute();
+        CProblem<7>::Execute();
         break;
     case 8:
-        CProblem8::Execute();
+        CProblem<8>::Execute();
         break;
     case 9:
-        CProblem9::Execute();
+        CProblem<9>::Execute();
         break;
     case 10:
-        CProblem10::Execute();
+        CProblem<10>::Execute();
         break;
     case 11:
-        CProblem11::Execute();
+        CProblem<11>::Execute();
         break;
     case 12:
     default:
-        CProblem12::Execute();
+        CProblem<12>::Execute();
         break;
     }
 }
