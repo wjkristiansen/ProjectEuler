@@ -10,10 +10,10 @@ void main(int argc, const char *argv[])
     InCommand::InCommandInt ProblemNumber(-1);
     InCommand::InCommandBool ShowHelp;
     CommandReader.DefaultCommand()->DeclareVariableOption(ProblemNumber, "problem", "Project Euler Problem Number", 'p');
-    CommandReader.DefaultCommand()->DeclareVariableOption(ShowHelp, "help", "Get help", 'h');
+    CommandReader.DefaultCommand()->DeclareSwitchOption(ShowHelp, "help", "Get help", 'h');
     CommandReader.ReadOptions();
 
-    if(ShowHelp.HasValue() && ShowHelp.Value())
+    if(ShowHelp)
     {
         std::cout << std::endl;
         std::cout << CommandReader.DefaultCommand()->UsageString() << std::endl;
