@@ -5,13 +5,12 @@
 
 void main(int argc, const char *argv[])
 {
-    InCommand::CCommandScope CommandLine("pe");
-    auto &ProblemParam = CommandLine.DeclareVariableOption("problem", "0");
-    CommandLine.ParseOptions(argc, argv, 1);
+    InCommand::CCommandReader CommandReader("pe", "Project Euler Solutions", argc, argv);
+    InCommand::InCommandInt ProblemNumber;
+    CommandReader.DefaultCommand()->DeclareVariableOption(ProblemNumber, "problem", "Project Euler Problem Number", 'p');
+    CommandReader.ReadOptions();
 
-    int problem = std::stoi(ProblemParam.GetValueAsString());
-
-    switch (problem)
+    switch (ProblemNumber.Value())
     {
     case 1:
         CProblem<1>::Execute();
