@@ -1,3 +1,4 @@
+#include <iostream>
 #include <memory>
 #include <InCommand.h>
 
@@ -6,9 +7,19 @@
 void main(int argc, const char *argv[])
 {
     InCommand::CCommandReader CommandReader("pe", "Project Euler Solutions", argc, argv);
-    InCommand::InCommandInt ProblemNumber;
+    InCommand::InCommandInt ProblemNumber(-1);
+    InCommand::InCommandBool ShowHelp;
     CommandReader.DefaultCommand()->DeclareVariableOption(ProblemNumber, "problem", "Project Euler Problem Number", 'p');
+    CommandReader.DefaultCommand()->DeclareVariableOption(ShowHelp, "help", "Get help", 'h');
     CommandReader.ReadOptions();
+
+    if(ShowHelp.HasValue() && ShowHelp.Value())
+    {
+        std::cout << std::endl;
+        std::cout << CommandReader.DefaultCommand()->UsageString() << std::endl;
+        std::cout << std::endl;
+        return;
+    }
 
     switch (ProblemNumber.Value())
     {
@@ -46,8 +57,11 @@ void main(int argc, const char *argv[])
         CProblem<11>::Execute();
         break;
     case 12:
-    default:
         CProblem<12>::Execute();
+        break;
+    case 13:
+    default:
+        CProblem<13>::Execute();
         break;
     }
 }

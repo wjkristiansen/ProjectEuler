@@ -13,7 +13,7 @@ include(FetchContent)
 FetchContent_Declare(
   InCommand
   GIT_REPOSITORY https://github.com/wjkristiansen/InCommand.git
-  GIT_TAG InCommand.1.0.0.1
+  GIT_TAG InCommand.1.0.0.2
 )
 
 FetchContent_MakeAvailable(InCommand)
