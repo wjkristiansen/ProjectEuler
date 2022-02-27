@@ -69,8 +69,11 @@ void main(int argc, const char *argv[])
         CProblem<15>::Execute();
         break;
     case 16:
-    default:
         CProblem<16>::Execute();
+        break;
+    case 17:
+    default:
+        CProblem<17>::Execute();
         break;
     }
 }
