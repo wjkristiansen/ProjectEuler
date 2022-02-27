@@ -16,7 +16,8 @@ add_executable(pe
     Problem14.cpp
     Problem15.cpp
     Problem16.cpp
-    Problem17.cpp)
+    Problem17.cpp
+    Problem18.cpp)
 
 if(MSVC)
     target_compile_options(pe PRIVATE /W4 /WX)
