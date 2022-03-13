@@ -144,5 +144,5 @@ void CProblem<19>::Execute()
         }
         dow = NextDayOfWeek(dow);
     }
-    std::cout << "Problem 18 Solution: " << NumFirstDaySundays << std::endl;
+    std::cout << "Problem 19 Solution: " << NumFirstDaySundays << std::endl;
 }
