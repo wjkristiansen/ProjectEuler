@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include <functional>
 
 // Multiplies two numbers represented as an array of decimal digits 0-9 with the least significant digit at index [0]
 inline std::vector<char> DecimalMultiply(const std::vector<char> &v1, const std::vector<char> &v2)
@@ -48,3 +49,15 @@ inline std::vector<char> ToDec(size_t n)
     return v;
 }
 
+template<class Accumulator>
+inline void AccumulateProperDivisors(size_t n, Accumulator &acc)
+{
+    for(size_t f = n / 2; f > 1; --f)
+    {
+        if((n / f) * f == n)
+        {
+            acc.Accumulate(f);
+        }
+    }
+    acc.Accumulate(1);
+}
